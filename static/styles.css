@@ -1,0 +1,210 @@
+/* Body and fonts */
+body {
+    margin: 0;
+    background-color: #FDEDEC;   /* soft medical pink */
+    color: #2C3E50;              /* deep navy */
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    line-height: 1.5;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.title-image {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 550px;
+    height: 600px;
+}
+
+/* Nav Bar Image */
+.nav-bar-image {
+    width: 8%;
+}
+
+/* Stylish Navigation bar with border and inner background */
+.navbar {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+    background-color: rgba(255, 255, 255, 0.85); /* soft translucent white */
+    border: 2px solid #d6336c; /* pinkish border */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(214, 51, 108, 0.2); /* subtle pink shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: saturate(180%) blur(10px); /* glass effect */
+}
+
+/* Navbar hover effect */
+.navbar:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 6px 15px rgba(214, 51, 108, 0.3);
+}
+
+/* Navbar brand and nav-links colors */
+.navbar-brand,
+.nav-link {
+    color: #d6336c !important; /* pink */
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #9b1a4d !important; /* darker pink */
+}
+
+/* Nav item padding */
+.nav-item {
+    padding: 0 18px;
+}
+
+/* Title section padding */
+.pad {
+    padding-left: 7rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+/* Get started button container */
+.get-started-buttons {
+    padding-left: 9rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 3rem;
+    font-size: larger;
+}
+
+/* Title image width */
+.title-image {
+    width: 100%;
+    padding-top: 1.5rem;
+}
+
+/* Get started button styling */
+.get-started {
+    color: white;
+}
+
+.get-started:hover {
+    color: #EEEEEE;
+}
+
+/* Footer */
+.foot, .copyright {
+    text-align: center;
+}
+
+.footer-icon {
+    padding: 20px 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Social media colors and hover */
+.insta {
+    color: #E1306C;
+}
+
+.insta:hover {
+    color: rgb(151, 40, 40);
+}
+
+.fb {
+    color: #4267B2;
+}
+
+.fb:hover {
+    color: rgb(20, 44, 132);
+}
+
+.twtr {
+    color: #1DA1F2;
+}
+
+.twtr:hover {
+    color: rgb(22, 94, 158);
+}
+
+.mail {
+    color: #B23121;
+}
+
+.mail:hover {
+    color: rgb(117, 40, 40);
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .title-image {
+        display: none;
+    }
+
+    .navbar {
+        padding: 0.7rem !important;
+    }
+
+    .navbar-brand {
+        width: 60%;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.55);
+    }
+
+    .nav-link {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: #0d6efd;
+        text-decoration: none;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    }
+
+    .nav-bar-image {
+        width: 20%;
+    }
+
+    .pad {
+        padding-left: 2rem;
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+
+    h1 {
+        padding-bottom: 20px;
+        font-family: 'Merriweather', serif;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .get-started-buttons {
+        padding-left: 6rem;
+        padding-top: 2rem;
+        padding-right: 3rem;
+        font-size: larger;
+    }
+
+    #footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
